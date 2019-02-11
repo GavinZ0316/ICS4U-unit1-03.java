@@ -1,0 +1,31 @@
+/****************************************************
+*Daily assignment1-03
+*Created by Gavin Zhou
+*Created on 2019-02-011
+*This assignment can calculat the energy of an OBJ
+*****************************************************/
+
+import java.util.*;
+
+class energyProgram{
+	private static Scanner input;
+
+	public static void main(String[]args){
+
+	input = new Scanner(System.in);
+	
+	//Defining variable:
+	double mass;
+	double answer;
+	double light = 299800000;
+	//Asking for user input and storing it into "double mass"
+	System.out.println("Ener the mass of an OBJ");
+	mass = input.nextDouble();
+	
+	//Calculations
+	answer = mass*light*light;
+	//answer
+	System.out.println("The answer is: " + answer + "J");
+	
+	}
+}
